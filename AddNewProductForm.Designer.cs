@@ -179,6 +179,7 @@
             closeButton.TabIndex = 3;
             closeButton.Text = "Cl&ose";
             closeButton.UseVisualStyleBackColor = true;
+            closeButton.Click += closeButton_Click;
             // 
             // AddNewProductForm
             // 

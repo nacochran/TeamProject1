@@ -48,6 +48,7 @@
             // inventoryListBox
             // 
             inventoryListBox.FormattingEnabled = true;
+            inventoryListBox.HorizontalScrollbar = true;
             inventoryListBox.Location = new Point(38, 73);
             inventoryListBox.Name = "inventoryListBox";
             inventoryListBox.Size = new Size(546, 244);
@@ -61,6 +62,7 @@
             closeButton.TabIndex = 6;
             closeButton.Text = "Cl&ose";
             closeButton.UseVisualStyleBackColor = true;
+            closeButton.Click += closeButton_Click;
             // 
             // printButton
             // 

@@ -75,7 +75,7 @@ namespace TeamProject1
                 priceTextBox.Focus();
                 priceTextBox.SelectAll();
             }
-            else if (!string.IsNullOrEmpty(quantityTextBox.Text) && 
+            else if (!string.IsNullOrEmpty(quantityTextBox.Text) &&
                 !int.TryParse(quantityTextBox.Text, out onHand) || onHand < 0)
             {
                 MessageBox.Show("Quantity must be a number or empty");
@@ -91,6 +91,11 @@ namespace TeamProject1
                 MessageBox.Show("Record saved.");
                 clearButton.PerformClick();
             }
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

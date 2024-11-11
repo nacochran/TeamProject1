@@ -55,6 +55,7 @@
             addNewProductButton.TabIndex = 1;
             addNewProductButton.Text = "&Add New Product";
             addNewProductButton.UseVisualStyleBackColor = true;
+            addNewProductButton.Click += addNewProductButton_Click;
             // 
             // updateInventoryButton
             // 
@@ -65,6 +66,7 @@
             updateInventoryButton.TabIndex = 2;
             updateInventoryButton.Text = "&Update Inventory";
             updateInventoryButton.UseVisualStyleBackColor = true;
+            updateInventoryButton.Click += updateInventoryButton_Click;
             // 
             // displayInventoryButton
             // 
@@ -75,6 +77,7 @@
             displayInventoryButton.TabIndex = 3;
             displayInventoryButton.Text = "&Display Inventory";
             displayInventoryButton.UseVisualStyleBackColor = true;
+            displayInventoryButton.Click += displayInventoryButton_Click;
             // 
             // cashierCheckoutButton
             // 
@@ -85,6 +88,7 @@
             cashierCheckoutButton.TabIndex = 4;
             cashierCheckoutButton.Text = "Cashier Checkout";
             cashierCheckoutButton.UseVisualStyleBackColor = true;
+            cashierCheckoutButton.Click += cashierCheckoutButton_Click;
             // 
             // exitButton
             // 
@@ -95,6 +99,7 @@
             exitButton.TabIndex = 5;
             exitButton.Text = "E&xit";
             exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
             // 
             // MainForm
             // 
