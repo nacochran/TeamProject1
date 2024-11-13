@@ -48,7 +48,7 @@
             label1.Font = new Font("Microsoft Sans Serif", 10.2F);
             label1.Location = new Point(51, 39);
             label1.Name = "label1";
-            label1.Size = new Size(519, 39);
+            label1.Size = new Size(259, 20);
             label1.TabIndex = 1;
             label1.Text = "Scan barcode or enter product id:";
             // 
@@ -58,7 +58,7 @@
             label2.Font = new Font("Microsoft Sans Serif", 10.2F);
             label2.Location = new Point(86, 83);
             label2.Name = "label2";
-            label2.Size = new Size(187, 39);
+            label2.Size = new Size(94, 20);
             label2.TabIndex = 2;
             label2.Text = "Product ID:";
             // 
@@ -68,7 +68,7 @@
             label3.Font = new Font("Microsoft Sans Serif", 10.2F);
             label3.Location = new Point(89, 132);
             label3.Name = "label3";
-            label3.Size = new Size(182, 39);
+            label3.Size = new Size(91, 20);
             label3.TabIndex = 3;
             label3.Text = "Units Sold:";
             // 
@@ -76,14 +76,14 @@
             // 
             idTextBox.Location = new Point(202, 76);
             idTextBox.Name = "idTextBox";
-            idTextBox.Size = new Size(271, 46);
+            idTextBox.Size = new Size(271, 27);
             idTextBox.TabIndex = 4;
             // 
             // unitsTextBox
             // 
             unitsTextBox.Location = new Point(277, 132);
             unitsTextBox.Name = "unitsTextBox";
-            unitsTextBox.Size = new Size(135, 46);
+            unitsTextBox.Size = new Size(135, 27);
             unitsTextBox.TabIndex = 5;
             // 
             // addToOrderButton
@@ -132,17 +132,16 @@
             label4.Font = new Font("Microsoft Sans Serif", 10.2F);
             label4.Location = new Point(45, 309);
             label4.Name = "label4";
-            label4.Size = new Size(226, 39);
+            label4.Size = new Size(115, 20);
             label4.TabIndex = 10;
             label4.Text = "Order Details:";
             // 
             // orderListBox
             // 
             orderListBox.FormattingEnabled = true;
-            orderListBox.ItemHeight = 39;
             orderListBox.Location = new Point(51, 345);
             orderListBox.Name = "orderListBox";
-            orderListBox.Size = new Size(522, 160);
+            orderListBox.Size = new Size(522, 144);
             orderListBox.TabIndex = 11;
             // 
             // printDocument1
@@ -151,9 +150,9 @@
             // 
             // CheckoutForm
             // 
-            AutoScaleDimensions = new SizeF(20F, 39F);
+            AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(974, 625);
+            ClientSize = new Size(604, 522);
             Controls.Add(orderListBox);
             Controls.Add(label4);
             Controls.Add(saveAndCloseButton);
