@@ -50,12 +50,39 @@ namespace TeamProject1
 
         private void printButton_Click(object sender, EventArgs e)
         {
-            // TODO
+            printDocument1.Print();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            // TODO
+            e.Graphics.DrawString("Inventory",
+                new Font("Courier New", 24, FontStyle.Bold),
+                Brushes.Black, 350, 100);
+            e.Graphics.DrawString(DateTime.Now.ToString(),
+                new Font("Courier New", 12, FontStyle.Italic),
+                Brushes.Black, 330, 150);
+            int x = 100, y = 200;
+            foreach (var product in products)
+            {
+                e.Graphics.DrawString($"Product ID: {product.ProductId}" +
+                       $" Product Name: {product.Name}",
+                       new Font("Courier New", 12, FontStyle.Regular),
+                       Brushes.Black, x, y);
+                y += 16;
+                e.Graphics.DrawString($"Description: {product.Description}",
+                    new Font("Courier New", 12, FontStyle.Regular),
+                    Brushes.Black, x, y);
+                y += 16;
+                e.Graphics.DrawString($"Price: {product.Price}" +
+                    $" Quantity: {product.OnHand}",
+                    new Font("Courier New", 12, FontStyle.Regular),
+                    product.OnHand < 3 ? Brushes.Red : Brushes.Black, x, y);
+                y += 16;
+                e.Graphics.DrawString($"",
+                        new Font("Courier New", 12, FontStyle.Regular),
+                        Brushes.Black, x, y);
+                y += 16;
+            }
         }
 
         private void closeButton_Click(object sender, EventArgs e)
